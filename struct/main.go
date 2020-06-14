@@ -9,5 +9,9 @@ type person struct {
 
 func main() {
 	alex := person{firstName: "Alex", lastName: "Anderson"}
-	fmt.Println(alex)
+	fmt.Printf("%+v", alex)
+
+	var anon person
+	anon.lastName = " 4n0n"
+	fmt.Printf("%+v", anon)
 }
